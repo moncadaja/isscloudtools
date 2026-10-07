@@ -2,7 +2,7 @@
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 from PyQt5 import uic, QtCore
-import pkg_resources
+from isscloudtools._resources import resource_filename
 from glob import glob
 import os
 from historydict import HistoryDict
@@ -10,7 +10,7 @@ from historydict import HistoryDict
 from .initialize import get_gdrive_service
 from .gdrive import folder_exists_in_root, create_folder, folder_exists, upload_file
 
-ui_path = pkg_resources.resource_filename('isscloudtools', 'ui/Tracker.ui')
+ui_path = resource_filename('ui/Tracker.ui')
 
 class ISSTracker(*uic.loadUiType(ui_path)):
 
