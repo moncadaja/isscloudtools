@@ -24,7 +24,7 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 import dropbox
-from slack import WebClient
+from slack_sdk import WebClient
 import json
 
 # If modifying these scopes, delete the file token.pickle.

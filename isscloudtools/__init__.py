@@ -1,4 +1,7 @@
+"""Cloud service integrations for the ISS beamline."""
+from importlib.metadata import PackageNotFoundError, version
 
-from ._version import get_versions
-__version__ = get_versions()['version']
-del get_versions
+try:
+    __version__ = version("isscloudtools")
+except PackageNotFoundError:
+    __version__ = "0+unknown"
