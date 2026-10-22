@@ -1,7 +1,7 @@
 
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
-from PyQt5 import uic, QtCore
+from qtpy import uic, QtCore
 from isscloudtools._resources import resource_filename
 from glob import glob
 import os
